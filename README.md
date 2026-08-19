@@ -148,16 +148,24 @@ Tudo configurável pelo painel (grava `config.json` e aplica em runtime):
 
 ---
 
-## Comandos Discord
+## Comandos Discord (source v7 adaptada ao TCP privado)
+
+Saldo agora é **crédito de salas** (não R$). Keys no formato `SALA…`. Senha da sala: 4 dígitos (aleatória / fixa / 0000).
 
 | Comando | Quem | Função |
 |---------|------|--------|
-| `/sala` | todos | CS 4v4 ou BR. Consome saldo; senão PIX; dono cria grátis se PIX não estiver configurado |
-| `/saldo` | todos | mostra saldo (dono pode consultar outro usuário) |
-| `/setarsaldo` | dono | define saldo em R$ |
-| `/sala_admin` | dono | cria na hora, sem cobrar |
-| `/salas` | dono | lista ID, senha e players |
-| `/fechar` | dono | fecha pelo ID |
+| `/menu` | todos | hub: criar, perfil, saldo, senha, resgatar key |
+| `/criar-sala` | todos | CS 4v4 ou BR Classic |
+| `/saldo` | todos | créditos de sala |
+| `/resgatar` | todos | resgata key |
+| `/status` | todos | TCP online + manutenção |
+| `/painel` | dono | posta card público no canal |
+| `/painel-dev` | dono | keys, saldo, salas, manutenção |
+| `/gerar-key` | dono | gera key com N salas |
+| `/setarsaldo` | dono | define créditos |
+| `/sala-admin` | dono | cria na hora |
+| `/salas` / `/fechar` | dono | listar e fechar |
+| `/bloquear` | dono | blacklist |
 
 Convite (trocar o client id se necessário):
 
