@@ -1,0 +1,17 @@
+# Segredos e runtime
+.env
+.env.*
+config.json
+data/
+*.log
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+
+# Binários
+*.exe
+*.tgz
+*.tar.gz
